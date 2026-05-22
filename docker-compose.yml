@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: linkid-frontend
+    ports:
+      - "80:80"
+
+  backend:
+    build:
+      context: ./backend
+    container_name: linkid-backend
+    ports:
+      - "8000:8000"
